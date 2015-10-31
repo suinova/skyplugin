@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "SkyPlugin",
+  "description": "This extension adds a table to the Sky my-broadband page to show more numbers.",
+  "version": "1.0",
+
+  "permissions": [
+	"https://secure.sky.com/my-broadband"
+  ],
+  "content_scripts": [
+	{
+		"matches": ["https://secure.sky.com/my-broadband"],
+		"js": ["sky.js"]
+	}
+  ]
+}
